@@ -89,7 +89,6 @@ class Game extends React.Component {
                 'Go to game start';
             return (
                 <li key={move}>
-                <li>
                     <button onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             );
@@ -97,9 +96,9 @@ class Game extends React.Component {
 
         let status;
         if (winner) {
-            status = 'Winner: ' + winner;
+            status = "Winner: " + winner;
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+            status = "Next player: " + (this.state.xIsNext ? "X" : "O");
         }
 
         return (
